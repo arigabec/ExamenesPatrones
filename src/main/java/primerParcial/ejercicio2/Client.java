@@ -25,11 +25,32 @@ public class Client {
         System.out.println("Puertos USB: " + tele1.getPuertosUSB());
         System.out.println("Control Remoto: " + tele1.getControlRemoto());
         System.out.println("Bluetooth: " + tele1.getBluetooth());
-        System.out.println("Serialn: " + tele1.getSerial());
+        System.out.println("Serial: " + tele1.getSerial());
+        System.out.println();
 
-        // Usamos el método clone para crear otro televisor
+        // Usamos el método clone para crear otros televisores
         Televisor tele2 = (Televisor) tele1.clone();
         tele2.setSerial("1234567891");
+        System.out.println("Fabricando televisor 2");
+        System.out.println("Serial: " + tele2.getSerial());
+        System.out.println();
 
+        Televisor tele3 = (Televisor) tele1.clone();
+        tele3.setSerial("1234567892");
+        System.out.println("Fabricando televisor 3");
+        System.out.println("Serial: " + tele3.getSerial());
+        System.out.println();
+
+        Televisor tele4 = (Televisor) tele1.clone();
+        tele4.setSerial("1234567893");
+        System.out.println("Fabricando televisor 4");
+        System.out.println("Serial: " + tele4.getSerial());
+        System.out.println();
+
+        Televisor tele5 = (Televisor) tele1.clone();
+        tele5.setSerial("1234567891");
+        System.out.println("Fabricando televisor 5");
+        System.out.println("Serial: " + tele5.getSerial());
+        System.out.println();
     }
 }
